@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 services:
   web:
     build:
@@ -22,9 +22,11 @@ services:
  # For mariadb databases
  # Make sure to select the correct database version
   # db:
-  #   image: "mariadb:10.3"
+  #   image: "mariadb:10.7"
   #   environment:
   #     MYSQL_ROOT_PASSWORD: db_password
+  #   ports:
+  #     - "3307:3306"
 
 # For Postgres database
 # Make sure to select the correct database version
